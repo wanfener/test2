@@ -16,7 +16,10 @@ public class Controller {
 
     @GetMapping("/aaa")
     public void jie() {
+
         System.out.println("d");
+
+        System.out.println("c");
         rabbitTemplate.convertAndSend(RabbitmqConfig.EXCHANGE_TOPICS_INFORM,"inform.email","消息");
     }
 }
