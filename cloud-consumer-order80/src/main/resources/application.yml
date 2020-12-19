@@ -1,0 +1,23 @@
+server:
+  port: 80
+
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://localhost:10001/eureka
+security:
+  basic:
+    enabled: false
+
+spring:
+  application:
+    name: test‐rabbitmq‐producer
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: root
+    password: root
+    virtualHost: /
